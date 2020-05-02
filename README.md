@@ -1,5 +1,3 @@
-lesson-2:创建mongoDB数据库
+lesson-3:链接数据库，创建用户信息Schema，并导出model。
 
 
-测试数据库地址
-mongodb+srv://test:test1234@cluster0-menjs.mongodb.net/test?retryWrites=true&w=majority
