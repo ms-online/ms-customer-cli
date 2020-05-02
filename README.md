@@ -1,3 +1,3 @@
-lesson-3:链接数据库，创建用户信息Schema，并导出model。
+lesson-4:创建用户&查询用户命令
 
 
