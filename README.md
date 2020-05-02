@@ -1,1 +1,1 @@
-lesson-5:更新&删除&所有用户
+lesson-6:npm link
