@@ -30,8 +30,36 @@ const findCustomer = (name) => {
     })
 }
 
+// 更新用户
+const updateCustomer = (_id, customer) => {
+    Customer.update({_id},customer).then(customer => {
+        console.info('用户信息已更新...');
+        mongoose.connection.close();
+    })
+}
+
+// 删除用户
+const removeCustomer = (_id) => {
+    Customer.remove({_id}).then(customer => {
+        console.info('用户已删除...');
+        mongoose.connection.close();
+    })
+}
+
+// 获取用户列表
+const listCustomer = () => {
+    Customer.find().then(customer => {
+        console.info(customer);
+        console.info(`${customer.length} 个用户`);
+        mongoose.connection.close();
+    })
+}
+
 // 输出方法
 module.exports = {
     addCustomer,
-    findCustomer
+    findCustomer,
+    removeCustomer,
+    updateCustomer,
+    listCustomer
 }
